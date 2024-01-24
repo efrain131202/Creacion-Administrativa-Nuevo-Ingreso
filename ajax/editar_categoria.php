@@ -21,7 +21,7 @@
 		$sql="UPDATE categorias SET nombre_categoria='".$nombre."', descripcion_categoria='".$descripcion."' WHERE id_categoria='".$id_categoria."'";
 		$query_update = mysqli_query($con,$sql);
 			if ($query_update){
-				$messages[] = "Categoría ha sido actualizada satisfactoriamente.";
+				$messages[] = "Grupo ha sido actualizada satisfactoriamente.";
 			} else{
 				$errors []= "Lo siento algo ha salido mal intenta nuevamente.".mysqli_error($con);
 			}

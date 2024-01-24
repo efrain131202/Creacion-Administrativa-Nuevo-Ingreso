@@ -31,11 +31,11 @@ include('is_logged.php');//Archivo verifica que el usario que intenta acceder a 
 		$sql="INSERT INTO products (codigo_producto, nombre_producto, date_added, precio_producto, stock, id_categoria) VALUES ('$codigo','$nombre','$date_added','$precio_venta', '$stock','$id_categoria')";
 		$query_new_insert = mysqli_query($con,$sql);
 			if ($query_new_insert){
-				$messages[] = "Producto ha sido ingresado satisfactoriamente.";
+				$messages[] = "Alumno ha sido ingresado satisfactoriamente.";
 				$id_producto=get_row('products','id_producto', 'codigo_producto', $codigo);
 				$user_id=$_SESSION['user_id'];
 				$firstname=$_SESSION['firstname'];
-				$nota="$firstname cuenta con $stock años de edad";
+				$nota="$firstname califico con $stock al alumno";
 				echo guardar_historial($id_producto,$user_id,$date_added,$nota,$codigo,$stock);
 				
 			} else{

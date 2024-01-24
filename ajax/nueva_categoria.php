@@ -14,7 +14,7 @@
 		$sql="INSERT INTO categorias (nombre_categoria, descripcion_categoria,date_added) VALUES ('$nombre','$descripcion','$date_added')";
 		$query_new_insert = mysqli_query($con,$sql);
 			if ($query_new_insert){
-				$messages[] = "Categoría ha sido ingresada satisfactoriamente.";
+				$messages[] = "Grupo ha sido ingresada satisfactoriamente.";
 			} else{
 				$errors []= "Lo siento algo ha salido mal intenta nuevamente.".mysqli_error($con);
 			}

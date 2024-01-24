@@ -26,7 +26,7 @@
 		$id_producto=intval($_GET['id']);
 		$user_id=$_SESSION['user_id'];
 		$firstname=$_SESSION['firstname'];
-		$nota="$firstname cuenta con $quantity años de edad";
+		$nota="$firstname califico con $quantity al alumno";
 		$fecha=date("Y-m-d H:i:s");
 		guardar_historial($id_producto,$user_id,$fecha,$nota,$reference,$quantity);
 		$update=agregar_stock($id_producto,$quantity);
@@ -43,7 +43,7 @@
 		$id_producto=intval($_GET['id']);
 		$user_id=$_SESSION['user_id'];
 		$firstname=$_SESSION['firstname'];
-		$nota="$firstname eliminó $quantity producto(s) del inventario";
+		$nota="$firstname eliminó $quantity calificación del alumno";
 		$fecha=date("Y-m-d H:i:s");
 		guardar_historial($id_producto,$user_id,$fecha,$nota,$reference,$quantity);
 		$update=eliminar_stock($id_producto,$quantity);
@@ -104,13 +104,13 @@
                     <div class="col-sm-12 margin-btm-10">
                     </div>
                     <div class="col-sm-12">
-                      <span class="current-stock">Edad de Alumno</span>
+                      <span class="current-stock">Calificación de Alumno</span>
                     </div>
                     <div class="col-sm-12 margin-btm-10">
                       <span class="item-quantity"><?php echo number_format($row['stock'],2);?></span>
                     </div>
 					<div class="col-sm-12">
-                      <span class="current-stock"> calificacion de alumno  </span>
+                      <span class="current-stock"> Edad de alumno  </span>
                     </div>
 					<div class="col-sm-12">
                       <span class="item-price"> <?php echo number_format($row['precio_producto'],2);?></span>
@@ -163,7 +163,7 @@
 							<td>Hora</td>
 							<td>Descripción</td>
 							<td>Matricula</td>
-							<td class='text-center'>edad</td>
+							<td class='text-center'>Calificación</td>
 						</tr>
 						<?php
 							$query=mysqli_query($con,"select * from historial where id_producto='$id_producto'");
@@ -245,7 +245,7 @@ $( "#editar_producto" ).submit(function( event ) {
 	
 	function eliminar (id){
 		var q= $("#q").val();
-		if (confirm("Realmente deseas eliminar el producto")){	
+		if (confirm("Realmente deseas eliminar el Alumno")){	
 			location.replace('stock.php?delete='+id);
 		}
 	}

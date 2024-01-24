@@ -4,8 +4,6 @@
 
 -Credenciales: admin1 y contraseña: 12345678
 
--hacer cambios necesarios en ventanas de alerta y otras cuestiones
-
 --Instalacion--
 
 Instalación en windows (servidor local)

@@ -45,14 +45,14 @@
 			  </div>
 			  
 			  <div class="form-group">
-				<label for="mod_precio" class="col-sm-3 control-label">Calificacion</label>
+				<label for="mod_precio" class="col-sm-3 control-label">Edad</label>
 				<div class="col-sm-8">
 				  <input type="text" class="form-control" id="mod_precio" name="mod_precio" placeholder="Precio de venta del producto" required pattern="^[0-9]{1,5}(\.[0-9]{0,2})?$" title="Ingresa sólo números con 0 ó 2 decimales" maxlength="8">
 				</div>
 			  </div>
 			 
 			 <div class="form-group">
-				<label for="mod_stock" class="col-sm-3 control-label">Edad</label>
+				<label for="mod_stock" class="col-sm-3 control-label">Calificación</label>
 				<div class="col-sm-8">
 				  <input type="number" min="0" class="form-control" id="mod_stock" name="mod_stock" placeholder="Inventario inicial" required  maxlength="8" readonly>
 				</div>

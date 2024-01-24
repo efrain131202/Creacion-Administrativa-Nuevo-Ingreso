@@ -46,16 +46,16 @@
 			  </div>
 			  
 			<div class="form-group">
-				<label for="precio" class="col-sm-3 control-label">calificacion</label>
+				<label for="precio" class="col-sm-3 control-label">Edad</label>
 				<div class="col-sm-8">
-				  <input type="text" class="form-control" id="precio" name="precio" placeholder="Calificacion del Alumno" required pattern="^[0-9]{1,5}(\.[0-9]{0,2})?$" title="Ingresa sólo números con 0 ó 2 decimales" maxlength="8">
+				  <input type="text" class="form-control" id="precio" name="precio" placeholder="Edad del Alumno" required pattern="^[0-9]{1,5}(\.[0-9]{0,2})?$" title="Ingresa sólo números con 0 ó 2 decimales" maxlength="8">
 				</div>
 			</div>
 			
 			<div class="form-group">
-				<label for="stock" class="col-sm-3 control-label">edad</label>
+				<label for="stock" class="col-sm-3 control-label">Calificacion</label>
 				<div class="col-sm-8">
-				  <input type="number" min="0" class="form-control" id="stock" name="stock" placeholder="Edad Actual" required  maxlength="8">
+				  <input type="number" min="0" class="form-control" id="stock" name="stock" placeholder="Calificacion del Alumno" required  maxlength="8">
 				</div>
 			</div>
 			 
