@@ -104,7 +104,7 @@
                     <div class="col-sm-12 margin-btm-10">
                     </div>
                     <div class="col-sm-12">
-                      <span class="current-stock">Calificación de Alumno</span>
+                      <span class="current-stock">Total de Puntos Obtenidos</span>
                     </div>
                     <div class="col-sm-12 margin-btm-10">
                       <span class="item-quantity"><?php echo number_format($row['stock'],2);?></span>
